@@ -68,4 +68,4 @@ All canonical scientific edges must be represented using `semantic_id`, matching
 }
 ```
 
-Exactly three scenes are checked. `style_id` is a free string: use a descriptive `FREE-...` name for the independently designed third version. Fingerprints describe layout choices for comparison, with no numerical diversity requirement. The compare command verifies IDs/kinds/labels, native-only shapes, canvas containment, approximate text fit and declared diversity. It does **not** prove visual quality or manuscript truth.
+The optional compare command checks exactly three scenes, one per composition; run it separately for each palette if used. It does not enforce the six-file delivery contract. `style_id` is a free string: use a descriptive `FREE-...` name for the independently designed third version. Fingerprints describe layout choices for comparison, with no numerical diversity requirement. The compare command verifies IDs/kinds/labels, native-only shapes, canvas containment, approximate text fit and declared diversity. It does **not** prove visual quality or manuscript truth.

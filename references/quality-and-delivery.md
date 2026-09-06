@@ -8,7 +8,7 @@ Look at the full figure, dense details and final publication size. Check text cl
 
 ## Useful delivery
 
-Provide three editable draw.io sources, vector exports where applicable and a comparable-size preview. Add a concise explanation of the three freshly researched design directions, recommend one and provide captions when useful. Retain plot scripts and enough source information to revise any real-data graphics. Disclose bitmap illustrations and imported vectors with limited editability.
+Provide six editable draw.io sources (three compositions, each with restrained and vivid color treatments), vector exports where applicable and a comparable-size 3-by-2 preview. Add a concise explanation of the three freshly researched design directions, recommend one and provide captions when useful. Retain plot scripts and enough source information to revise any real-data graphics. Disclose bitmap illustrations and imported vectors with limited editability.
 
 Use versioned directories and preserve user edits. Brief notes are usually sufficient; formal contracts, JSON manifests and hash-bound review packages are optional when reproducibility or complexity warrants them.
 

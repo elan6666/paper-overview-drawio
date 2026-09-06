@@ -1,12 +1,12 @@
 ---
 name: paper-overview-drawio
 description: >-
-  Design rich, editable paper overview figures in draw.io by first researching how current same-field papers present their methods. Use when the user requests overview/overall/framework figures, 论文总览图 or three alternative scientific figure designs. Combine formal schematic artwork and meaningful panels, then refine against peer figures with independent review.
+  Design rich, editable paper overview figures in draw.io by first researching how current same-field papers present their methods. Use when the user requests overview/overall/framework figures, 论文总览图 or alternative scientific figure designs. Combine formal schematic artwork and meaningful panels, then refine against peer figures with independent review.
 ---
 
 # Paper Overview in Draw.io
 
-Create a scientific overview that helps readers see the paper's idea, objects and mechanism. **Learn from relevant papers at the time of the task**, rather than choosing from a fixed distilled style library. Deliver three distinct, polished draw.io compositions. A generic box-and-arrow diagram is a starting sketch, not the intended finished result.
+Create a scientific overview that helps readers see the paper's idea, objects and mechanism. **Learn from relevant papers at the time of the task**, rather than choosing from a fixed distilled style library. Deliver six polished draw.io figures: three distinct compositions, each in two color treatments. A generic box-and-arrow diagram is a starting sketch, not the intended finished result.
 
 ## Understand the paper, then learn from its field
 
@@ -16,9 +16,11 @@ Search for closely related papers in leading journals and conferences for this f
 
 Keep a short record of the reference figures and what informed the design. Select references for relevance and visual usefulness, not prestige alone. If current sources are inaccessible, use available verified local material and disclose the limitation instead of claiming a fresh visual inspection. There is no required style taxonomy or reference count.
 
-## Design three complete alternatives
+## Design three compositions in two color treatments
 
 Develop three different ways of telling this paper's story using what you just learned and your own design judgment. They may borrow visual grammar, combine inspirations or take an original direction; there is no two-plus-one quota. Explain their strengths briefly and proceed to drawing unless the user asks to discuss first.
+
+For each composition, deliver a restrained paper palette and a more vivid paper palette: **3 compositions × 2 palettes = 6 versions**. Keep content, geometry, labels, assets and connector routes identical within each pair so the color comparison is meaningful. Use stronger fills and accent contrast for the vivid treatment while retaining a formal flat scientific style and readable text. The three compositions should differ in narrative and layout, not merely in color. If the user selects an existing figure, use its editable source as the visual anchor and preserve its preferred design rather than regenerating its structure from prose.
 
 Aim for the explanatory depth of the relevant peer figures. Complementary panels such as a/b/c often help: a main biological/model story, an expanded key mechanism, or a supported task/data context. Let the content decide the organization. Richness should come from visual explanations of cells, targets, graphs, representations and transformations—not extra boxes, decoration or a mandatory number of blocks. [Composition notes](references/selection-and-design.md) give soft suggestions.
 
@@ -30,6 +32,8 @@ Keep arrows easy to follow: prefer straight connections and align connected obje
 
 Actively consider generated assets when they help explain biological or experimental objects. Use the installed `imagegen` skill and built-in image generation; read its instructions at use time. For the user's preferred paper style, favor **formal flat 2D schematic artwork, thin clean outlines, restrained solid colors and simplified anatomy**. Avoid realistic cells, 3D/glowing renders or intricate textures unless requested. Generate isolated assets rather than a complete figure so scientific labels and relations remain editable. Match the actual reference images and inspect the result at its placed size; revise unsuitable assets rather than accepting them because generation succeeded.
 
+Enrich suitable schematic objects with meaningful repetition, modest layering, related colors and opacity differences—for example, a family of views or a stack of representations. Keep the foreground legible and do not imply measured quantities or duplicate scientific components just for decoration. Keep figure labels concise; move extended explanations to the caption.
+
 Native diagrams and generated illustrations can work together. Graph nodes, masks, embedding strips and operators often benefit from native vector construction. [Asset notes](references/illustrations-and-data-panels.md) and [visual vocabulary](references/native-primitives.md) are optional aids. Use enough meaningful visual material to explain the paper without turning it into a collage.
 
 If real data improve the overview, use Python or a suitable plotting tool and choose the visual form freely. Empirical charts need real, valid source data and reproducible transformations. Do not create plausible-looking results to fill a panel; a clearly schematic task illustration is different from an experimental chart. Respect project data/compute boundaries.
@@ -38,14 +42,14 @@ Generated illustration inserts are usually bitmaps. When allowed, preserve the v
 
 ## Review against peers and improve
 
-Render all three and inspect the full figure, dense details and final publication size. Check scientific meaning, readable text, connectors, hierarchy, visual consistency and how imports survived export. Place the new figures beside the actual peer overviews: is the central idea visible, are objects and mechanisms explained, and does each panel earn its space?
+Render all six and inspect the full figure, dense details and final publication size. Check scientific meaning, readable text, connectors, hierarchy, visual consistency and how imports survived export. Place the new figures beside the actual peer overviews: is the central idea visible, are objects and mechanisms explained, and does each panel earn its space?
 
-After generating all three figures, use an independent subagent to inspect the actual rendered outputs alongside the method evidence and reference figures. Ask for specific detail problems: unclear arrow origins or destinations, unnecessary bends and crossings, lines through text, label overlap or clipping, alignment, legibility and misleading scientific relationships. Collect its findings across the three versions, then perform one consolidated repair pass and rerender the affected figures. Verify the repaired details without starting another review–revision cycle. If subagents are unavailable, perform this check yourself and state the limitation.
+After generating all six figures, use an independent subagent to inspect the actual rendered outputs alongside the method evidence and reference figures. Ask for specific detail problems: unclear arrow origins or destinations, unnecessary bends and crossings, lines through text, label overlap or clipping, alignment, legibility and misleading scientific relationships. Collect its findings across the three compositions and both color treatments, then perform one consolidated repair pass and rerender the affected figures. Verify the repaired details without starting another review–revision cycle. If subagents are unavailable, perform this check yourself and state the limitation.
 
 Aim for figures that are reasonably comparable in visual explanation and finish to the selected peers. After the single repair pass, report any remaining issues honestly rather than silently starting more revisions or claiming every check passed. Do not invent a numeric beauty threshold or imply this establishes journal acceptance. Plugin Eval may help improve skill structure and helper code; its static score cannot certify figure aesthetics.
 
 ## Deliver
 
-Provide three editable `.drawio` files, SVG/PDF exports and a comparable-size preview. Briefly explain the design differences, recommend one and include useful captions and reference links. Disclose bitmap inserts, schematic versus measured panels and any scientific uncertainty. Preserve user revisions with versioned outputs.
+Provide six editable `.drawio` files, SVG/PDF exports and a comparable-size 3-by-2 preview. Briefly explain the design differences, recommend one and include useful captions and reference links. Disclose bitmap inserts, schematic versus measured panels and any scientific uncertainty. Preserve user revisions with versioned outputs.
 
 Use [export notes](references/drawio-authoring.md) and [quality notes](references/quality-and-delivery.md) as needed. Optional scripts support export and technical checks; manifests, JSON contracts and scoring forms are not prerequisites for ordinary design. The small bundled example is a helper smoke fixture only—not an aesthetic standard or a substitute for a real-paper test.
