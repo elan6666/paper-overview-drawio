@@ -4,7 +4,7 @@
 
 The paper's central idea is easy to find, the reading path is natural and the figure feels composed as a whole. Labels, symbols, images and detail panels support the explanation. Visual richness can come from clear representation glyphs and thoughtful hierarchy, not just extra decoration. Judge the result against the selected references and the paper's needs rather than the simple bundled demo.
 
-Look at the full figure, dense details and final publication size. Check text clearance, arrow directions/junctions, balance, palette consistency and the treatment of imported assets. Revise material problems. Suggested label sizes are around 8–10 pt at final size, but use judgment and the target venue's applicable requirements.
+Look at the full figure, dense details and final publication size. Check text clearance, arrow directions/junctions, balance, palette consistency and the treatment of imported assets. Trace rendered connectors end to end, including where each branch starts and where each arrowhead lands. Look for unrelated paths sharing a confusing corridor, unsupported junctions and explanatory prose that belongs in the caption. Check that repeated elements and opacity differences remain legible and meaningful. Revise material problems. Suggested label sizes are around 8–10 pt at final size, but use judgment and the target venue's applicable requirements.
 
 ## Useful delivery
 

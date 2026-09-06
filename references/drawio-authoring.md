@@ -6,6 +6,8 @@ Create an original scene from the paper contract; don't vector-trace the entire 
 
 Use meaningful group/node IDs. Author geometry with measured columns/rows and generous label clearance. Use a low number of turns in each scientific path; place a real fusion node where streams meet. A connector crossing is not a junction. Label ambiguous line types directly. Do not use a line plus a separate triangle to simulate an arrow.
 
+Plan branch and merge geometry before adding decorative detail. [Routing and visual economy](routing-and-visual-economy.md) covers connector corridors, related glyph families and caption placement.
+
 The helper accepts simple scenes but does not choose positions. Use explicit waypoints for return paths. Never run automatic layout over a carefully composed final scene unless it is intentionally being redesigned.
 
 ## Vector boundary
