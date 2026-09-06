@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文 Overview · 现学现画"
+  short_description: "先研究同领域顶会顶刊总览图，再结合正式示意素材在 draw.io 画三版，并独立审阅改进"
+  default_prompt: "使用 $paper-overview-drawio 先阅读我的论文，现查同领域优秀论文的 overview，学习它们的表达方式；按需生成正式简洁的示意素材，在 draw.io 中完成三版丰富的总览图，并让子代理对照同行图审阅改进。"

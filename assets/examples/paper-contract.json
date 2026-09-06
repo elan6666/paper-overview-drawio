@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "paper": "Illustrative conditional predictor — workflow test only",
+  "message": "Encode a control profile and select a graph-based perturbation vector, add them and decode the response.",
+  "width_mm": 180,
+  "minimum_font_pt": 7,
+  "nodes": [
+    {
+      "id": "control",
+      "label": "Control\nexpression",
+      "role": "input",
+      "evidence": "demo-brief.md: method definition (illustrative, no empirical claims)"
+    },
+    {
+      "id": "cell",
+      "label": "Cell encoder",
+      "role": "module",
+      "evidence": "demo-brief.md: method definition (illustrative, no empirical claims)"
+    },
+    {
+      "id": "graph",
+      "label": "Prior graph",
+      "role": "input",
+      "evidence": "demo-brief.md: method definition (illustrative, no empirical claims)"
+    },
+    {
+      "id": "gnn",
+      "label": "Graph encoder",
+      "role": "module",
+      "evidence": "demo-brief.md: method definition (illustrative, no empirical claims)"
+    },
+    {
+      "id": "pert",
+      "label": "Perturbation ID",
+      "role": "input",
+      "evidence": "demo-brief.md: method definition (illustrative, no empirical claims)"
+    },
+    {
+      "id": "select",
+      "label": "Select target\nembedding",
+      "role": "module",
+      "evidence": "demo-brief.md: method definition (illustrative, no empirical claims)"
+    },
+    {
+      "id": "fusion",
+      "label": "Add",
+      "role": "module",
+      "evidence": "demo-brief.md: method definition (illustrative, no empirical claims)"
+    },
+    {
+      "id": "decoder",
+      "label": "Decoder",
+      "role": "module",
+      "evidence": "demo-brief.md: method definition (illustrative, no empirical claims)"
+    },
+    {
+      "id": "output",
+      "label": "Predicted\nexpression",
+      "role": "output",
+      "evidence": "demo-brief.md: method definition (illustrative, no empirical claims)"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "control",
+      "target": "cell",
+      "kind": "data",
+      "evidence": "demo-brief.md: method definition"
+    },
+    {
+      "id": "e2",
+      "source": "cell",
+      "target": "fusion",
+      "kind": "data",
+      "evidence": "demo-brief.md: method definition"
+    },
+    {
+      "id": "e3",
+      "source": "graph",
+      "target": "gnn",
+      "kind": "data",
+      "evidence": "demo-brief.md: method definition"
+    },
+    {
+      "id": "e4",
+      "source": "gnn",
+      "target": "select",
+      "kind": "data",
+      "evidence": "demo-brief.md: method definition"
+    },
+    {
+      "id": "e5",
+      "source": "pert",
+      "target": "select",
+      "kind": "conditioning",
+      "evidence": "demo-brief.md: method definition"
+    },
+    {
+      "id": "e6",
+      "source": "select",
+      "target": "fusion",
+      "kind": "conditioning",
+      "evidence": "demo-brief.md: method definition"
+    },
+    {
+      "id": "e7",
+      "source": "fusion",
+      "target": "decoder",
+      "kind": "data",
+      "evidence": "demo-brief.md: method definition"
+    },
+    {
+      "id": "e8",
+      "source": "decoder",
+      "target": "output",
+      "kind": "data",
+      "evidence": "demo-brief.md: method definition"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Build/compare need only Python's standard library; vector export and QA need this.
+PyMuPDF>=1.24,<2

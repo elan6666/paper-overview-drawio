@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "name": "01 · Converging streams",
+  "style_id": "S1",
+  "canvas": {
+    "width": 900,
+    "height": 570
+  },
+  "fingerprint": {
+    "flow_direction": "left-to-right",
+    "panel_structure": "two-information-lanes",
+    "focal_point": "fusion-junction",
+    "detail_strategy": "inline"
+  },
+  "groups": [
+    {
+      "id": "main",
+      "label": "a  Basal state and perturbation information",
+      "x": 20,
+      "y": 75,
+      "w": 860,
+      "h": 435,
+      "fill": "#FAFBFC",
+      "stroke": "#DCE4EA"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "control",
+      "semantic_id": "control",
+      "label": "Control\nexpression",
+      "x": 40,
+      "y": 155,
+      "w": 135,
+      "h": 65,
+      "group": "main",
+      "shape": "roundrect",
+      "fill": "#E5F0F7",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "cell",
+      "semantic_id": "cell",
+      "label": "Cell encoder",
+      "x": 210,
+      "y": 155,
+      "w": 135,
+      "h": 65,
+      "group": "main",
+      "shape": "roundrect",
+      "fill": "#D7E8EA",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "fusion",
+      "semantic_id": "fusion",
+      "label": "Add",
+      "x": 545,
+      "y": 163.5,
+      "w": 48,
+      "h": 48,
+      "group": "main",
+      "shape": "ellipse",
+      "fill": "#F5DFAD",
+      "font_size": 16,
+      "bold": true
+    },
+    {
+      "id": "decoder",
+      "semantic_id": "decoder",
+      "label": "Decoder",
+      "x": 625,
+      "y": 155,
+      "w": 105,
+      "h": 65,
+      "group": "main",
+      "shape": "roundrect",
+      "fill": "#D7E8EA",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "output",
+      "semantic_id": "output",
+      "label": "Predicted\nexpression",
+      "x": 755,
+      "y": 155,
+      "w": 105,
+      "h": 65,
+      "group": "main",
+      "shape": "roundrect",
+      "fill": "#E5F0F7",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "graph",
+      "semantic_id": "graph",
+      "label": "Prior graph",
+      "x": 40,
+      "y": 320,
+      "w": 135,
+      "h": 65,
+      "group": "main",
+      "shape": "roundrect",
+      "fill": "#E5F0F7",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "gnn",
+      "semantic_id": "gnn",
+      "label": "Graph encoder",
+      "x": 210,
+      "y": 320,
+      "w": 135,
+      "h": 65,
+      "group": "main",
+      "shape": "roundrect",
+      "fill": "#D7E8EA",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "select",
+      "semantic_id": "select",
+      "label": "Select target\nembedding",
+      "x": 395,
+      "y": 320,
+      "w": 155,
+      "h": 65,
+      "group": "main",
+      "shape": "roundrect",
+      "fill": "#E9E6F1",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "pert",
+      "semantic_id": "pert",
+      "label": "Perturbation ID",
+      "x": 395,
+      "y": 425,
+      "w": 155,
+      "h": 55,
+      "group": "main",
+      "shape": "roundrect",
+      "fill": "#E9E6F1",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "title",
+      "role": "decoration",
+      "label": "Conditional prediction through latent addition",
+      "x": 20,
+      "y": 15,
+      "w": 860,
+      "h": 32,
+      "shape": "text",
+      "font_size": 21,
+      "bold": true
+    },
+    {
+      "id": "footer",
+      "role": "decoration",
+      "label": "Illustrative method · no experimental results",
+      "x": 20,
+      "y": 530,
+      "w": 860,
+      "h": 30,
+      "shape": "text",
+      "font_size": 15,
+      "font_color": "#667C87"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "semantic_id": "e1",
+      "source": "control",
+      "target": "cell",
+      "kind": "data",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0,
+        0.5
+      ],
+      "routing": "straight"
+    },
+    {
+      "id": "e2",
+      "semantic_id": "e2",
+      "source": "cell",
+      "target": "fusion",
+      "kind": "data",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0,
+        0.5
+      ],
+      "routing": "straight"
+    },
+    {
+      "id": "e3",
+      "semantic_id": "e3",
+      "source": "graph",
+      "target": "gnn",
+      "kind": "data",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0,
+        0.5
+      ],
+      "routing": "straight"
+    },
+    {
+      "id": "e4",
+      "semantic_id": "e4",
+      "source": "gnn",
+      "target": "select",
+      "kind": "data",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0,
+        0.5
+      ],
+      "routing": "straight"
+    },
+    {
+      "id": "e5",
+      "semantic_id": "e5",
+      "source": "pert",
+      "target": "select",
+      "kind": "conditioning",
+      "exit": [
+        0.5,
+        0
+      ],
+      "entry": [
+        0.5,
+        1
+      ],
+      "routing": "straight"
+    },
+    {
+      "id": "e6",
+      "semantic_id": "e6",
+      "source": "select",
+      "target": "fusion",
+      "kind": "conditioning",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0.5,
+        1
+      ],
+      "points": [
+        [
+          569,
+          352.5
+        ]
+      ]
+    },
+    {
+      "id": "e7",
+      "semantic_id": "e7",
+      "source": "fusion",
+      "target": "decoder",
+      "kind": "data",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0,
+        0.5
+      ],
+      "routing": "straight"
+    },
+    {
+      "id": "e8",
+      "semantic_id": "e8",
+      "source": "decoder",
+      "target": "output",
+      "kind": "data",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0,
+        0.5
+      ],
+      "routing": "straight"
+    }
+  ]
+}

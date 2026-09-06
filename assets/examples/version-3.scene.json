@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "name": "03 · Staged information processing",
+  "style_id": "S7",
+  "canvas": {
+    "width": 900,
+    "height": 570
+  },
+  "fingerprint": {
+    "flow_direction": "left-to-right-in-stages",
+    "panel_structure": "three-stage-columns",
+    "focal_point": "representation-to-response",
+    "detail_strategy": "stage-bands"
+  },
+  "groups": [
+    {
+      "id": "inputs",
+      "label": "a  Inputs",
+      "x": 20,
+      "y": 75,
+      "w": 190,
+      "h": 435,
+      "fill": "#FAFBFC",
+      "stroke": "#DCE4EA"
+    },
+    {
+      "id": "represent",
+      "label": "b  Representations",
+      "x": 230,
+      "y": 75,
+      "w": 375,
+      "h": 435,
+      "fill": "#FAFBFC",
+      "stroke": "#DCE4EA"
+    },
+    {
+      "id": "predict",
+      "label": "c  Response",
+      "x": 625,
+      "y": 75,
+      "w": 255,
+      "h": 435,
+      "fill": "#FAFBFC",
+      "stroke": "#DCE4EA"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "control",
+      "semantic_id": "control",
+      "label": "Control\nexpression",
+      "x": 40,
+      "y": 150,
+      "w": 145,
+      "h": 65,
+      "group": "inputs",
+      "shape": "roundrect",
+      "fill": "#E5F0F7",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "graph",
+      "semantic_id": "graph",
+      "label": "Prior graph",
+      "x": 40,
+      "y": 290,
+      "w": 145,
+      "h": 60,
+      "group": "inputs",
+      "shape": "roundrect",
+      "fill": "#E5F0F7",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "pert",
+      "semantic_id": "pert",
+      "label": "Perturbation ID",
+      "x": 40,
+      "y": 420,
+      "w": 145,
+      "h": 55,
+      "group": "inputs",
+      "shape": "roundrect",
+      "fill": "#E9E6F1",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "cell",
+      "semantic_id": "cell",
+      "label": "Cell encoder",
+      "x": 255,
+      "y": 150,
+      "w": 140,
+      "h": 65,
+      "group": "represent",
+      "shape": "roundrect",
+      "fill": "#D7E8EA",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "gnn",
+      "semantic_id": "gnn",
+      "label": "Graph encoder",
+      "x": 255,
+      "y": 290,
+      "w": 140,
+      "h": 65,
+      "group": "represent",
+      "shape": "roundrect",
+      "fill": "#D7E8EA",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "select",
+      "semantic_id": "select",
+      "label": "Select target\nembedding",
+      "x": 430,
+      "y": 365,
+      "w": 155,
+      "h": 80,
+      "group": "represent",
+      "shape": "roundrect",
+      "fill": "#E9E6F1",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "fusion",
+      "semantic_id": "fusion",
+      "label": "Add",
+      "x": 727.5,
+      "y": 162.5,
+      "w": 50,
+      "h": 50,
+      "group": "predict",
+      "shape": "ellipse",
+      "fill": "#F5DFAD",
+      "font_size": 16,
+      "bold": true
+    },
+    {
+      "id": "decoder",
+      "semantic_id": "decoder",
+      "label": "Decoder",
+      "x": 687.5,
+      "y": 295,
+      "w": 130,
+      "h": 60,
+      "group": "predict",
+      "shape": "roundrect",
+      "fill": "#D7E8EA",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "output",
+      "semantic_id": "output",
+      "label": "Predicted\nexpression",
+      "x": 675,
+      "y": 410,
+      "w": 155,
+      "h": 65,
+      "group": "predict",
+      "shape": "roundrect",
+      "fill": "#E5F0F7",
+      "font_size": 16,
+      "bold": false
+    },
+    {
+      "id": "title",
+      "role": "decoration",
+      "label": "From input representations to predicted response",
+      "x": 20,
+      "y": 15,
+      "w": 860,
+      "h": 32,
+      "shape": "text",
+      "font_size": 21,
+      "bold": true
+    },
+    {
+      "id": "footer",
+      "role": "decoration",
+      "label": "Illustrative method · no experimental results",
+      "x": 20,
+      "y": 530,
+      "w": 860,
+      "h": 30,
+      "shape": "text",
+      "font_size": 15,
+      "font_color": "#667C87"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "semantic_id": "e1",
+      "source": "control",
+      "target": "cell",
+      "kind": "data",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0,
+        0.5
+      ],
+      "routing": "straight"
+    },
+    {
+      "id": "e2",
+      "semantic_id": "e2",
+      "source": "cell",
+      "target": "fusion",
+      "kind": "data",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0.5,
+        0
+      ],
+      "points": [
+        [
+          420,
+          182.5
+        ],
+        [
+          420,
+          125
+        ],
+        [
+          752.5,
+          125
+        ]
+      ]
+    },
+    {
+      "id": "e3",
+      "semantic_id": "e3",
+      "source": "graph",
+      "target": "gnn",
+      "kind": "data",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0,
+        0.5
+      ],
+      "routing": "straight"
+    },
+    {
+      "id": "e4",
+      "semantic_id": "e4",
+      "source": "gnn",
+      "target": "select",
+      "kind": "data",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0.5,
+        0
+      ],
+      "points": [
+        [
+          508,
+          320
+        ]
+      ]
+    },
+    {
+      "id": "e5",
+      "semantic_id": "e5",
+      "source": "pert",
+      "target": "select",
+      "kind": "conditioning",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0,
+        0.5
+      ],
+      "points": [
+        [
+          220,
+          448
+        ],
+        [
+          410,
+          448
+        ],
+        [
+          410,
+          405
+        ]
+      ]
+    },
+    {
+      "id": "e6",
+      "semantic_id": "e6",
+      "source": "select",
+      "target": "fusion",
+      "kind": "conditioning",
+      "exit": [
+        1,
+        0.5
+      ],
+      "entry": [
+        0,
+        0.5
+      ],
+      "points": [
+        [
+          615,
+          405
+        ],
+        [
+          615,
+          187.5
+        ]
+      ]
+    },
+    {
+      "id": "e7",
+      "semantic_id": "e7",
+      "source": "fusion",
+      "target": "decoder",
+      "kind": "data",
+      "exit": [
+        0.5,
+        1
+      ],
+      "entry": [
+        0.5,
+        0
+      ],
+      "routing": "straight"
+    },
+    {
+      "id": "e8",
+      "semantic_id": "e8",
+      "source": "decoder",
+      "target": "output",
+      "kind": "data",
+      "exit": [
+        0.5,
+        1
+      ],
+      "entry": [
+        0.5,
+        0
+      ],
+      "routing": "straight"
+    }
+  ]
+}

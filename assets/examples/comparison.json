@@ -1,0 +1,9 @@
+{
+  "selected_styles": [
+    "S1",
+    "S3",
+    "S7"
+  ],
+  "selection_file": "style-selection.md",
+  "semantic_contract": "paper-contract.json"
+}
