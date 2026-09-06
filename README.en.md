@@ -44,14 +44,14 @@ You can specify a target journal, figure width, preferred colors, key contributi
 1. **Understand the method:** identify contributions, inputs, mechanisms and outputs; distinguish implementations from proposals.
 2. **Study relevant figures:** inspect actual overviews and captions rather than selecting from a fixed style library.
 3. **Design six versions:** three substantively different compositions, each in restrained and vivid palettes.
-4. **Draw and create assets:** use native draw.io objects, adding formal flat artwork or genuine data plots when useful.
+4. **Draft, then refine in the app:** create an editable `.drawio` draft, then use computer-use tools inside draw.io to refine connectors, alignment, spacing and styles. Save before exporting; add formal artwork or genuine data plots when useful.
 5. **Review and repair once:** an independent subagent checks all six exports for arrows, overlap, alignment, legibility, unjustified repetition and scientific relationships. Apply one consolidated repair pass and verify the fixes.
 
 Visual richness should come from scientific objects and mechanisms. A single encoder is normally one module. Use stacking, repetition and opacity only when their scientific meaning can be explained. Keep labels short and put longer explanations in captions.
 
 ## Requirements and outputs
 
-- An agent environment supporting local skills, file access, paper retrieval and image inspection.
+- An agent environment supporting local skills, file access, paper retrieval and image inspection. In-app refinement also requires working computer-use tools. Interaction failures and file-based fallbacks must be disclosed rather than described as UI edits.
 - For generated assets, the environment's `imagegen` skill and generation tool. This repository does not supply models or API credentials.
 - Edit `.drawio` sources in draw.io / diagrams.net. The export helper uses draw.io Desktop; set `DRAWIO_PATH` to override its location.
 - Optional dependencies: `python3 -m pip install -r requirements.txt`. Simple scene compilation and semantic checks use the standard library; PDF processing and previews use PyMuPDF.

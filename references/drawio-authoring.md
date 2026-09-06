@@ -8,6 +8,12 @@ Use meaningful group/node IDs. Author geometry with measured columns/rows and ge
 
 The helper accepts simple scenes but does not choose positions. Use explicit waypoints for return paths. Never run automatic layout over a carefully composed final scene unless it is intentionally being redesigned.
 
+## File draft, then app refinement
+
+Create the native source first, then open that file in draw.io Desktop for visual refinement through computer-use tools. Inspect the actual canvas, select objects and use the editor controls to adjust routes, placement and styles. Read the updated UI after interactions and verify the result. Save the app-edited file before exporting; CLI export of that saved file is fine. Preserve a versioned copy and treat app edits as authoritative rather than regenerating over them.
+
+If the app can be observed but interaction fails, distinguish these states. Reading an accessibility tree or screenshot does not prove that selection, dragging or saving works. Report the concrete failure and disclose any file-based fallback. Do not claim UI refinement when only XML or CLI operations were performed.
+
 ## Vector boundary
 
 A .drawio file or an SVG container can still contain PNG/JPEG. “Vector” here means no embedded raster images and no screenshot-as-background. Keep structural elements, labels and connectors native and editable. Mixed-media output may contain isolated generated illustrations; follow illustrations-and-data-panels.md and disclose bitmap inserts. When all-vector output is required, use native elements and verified vector assets. Complex biological icons should become simple schematic cells/organs if their exact appearance is not part of the science. AI image outputs cannot be made vector merely by changing extension or embedding them in SVG.
