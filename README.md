@@ -21,6 +21,8 @@
 
 ## 安装与使用
 
+首次使用先看[环境安装与检查指南](references/setup.md)：包含 macOS / Windows / Linux 的 draw.io 安装、Python 虚拟环境、依赖安装、`DRAWIO_PATH` 配置和最小导出测试。Skill 会先检查已有环境，只指导补齐缺失项。App 操作、生图与 subagent 需要宿主提供相应工具，安装本仓库不会自动获得这些能力。
+
 将仓库克隆到 Codex 技能目录；目标目录应尚不存在：
 
 ```bash
@@ -54,7 +56,7 @@ git clone https://github.com/elan6666/paper-overview-drawio.git ~/.codex/skills/
 - 支持本地技能的代理环境，以及文件读写、论文检索和图像查看能力。App 内精修还需要可用的电脑操作工具；操作失败时会说明限制及文件修改回退，不会声称已通过界面修改。
 - 需要生成素材时，使用环境提供的 `imagegen` 技能和生图工具；本仓库不提供模型或 API 凭据。
 - `.drawio` 可在 draw.io / diagrams.net 中编辑。辅助导出使用 draw.io Desktop；`DRAWIO_PATH` 可指定程序路径。
-- 可选依赖：`python3 -m pip install -r requirements.txt`。简单场景编译与语义检查只依赖标准库；PDF 处理和预览使用 PyMuPDF。
+- 运行完整辅助导出与 PDF 预览需要 PyMuPDF，按安装指南在 `.venv` 内安装 `requirements.txt`。仅简单场景编译与语义检查不需要第三方 Python 包。
 - SVG/PDF 可能含位图插图，不能仅凭文件格式宣称全矢量。实测数据图需要真实来源和可复现处理，不编造结果。
 
 ## 仓库内容

@@ -8,6 +8,10 @@ description: >-
 
 Create a scientific overview that helps readers see the paper's idea, objects and mechanism. **Learn from relevant papers at the time of the task**, rather than choosing from a fixed distilled style library. Deliver six polished draw.io figures: three distinct compositions, each in two color treatments. A generic box-and-arrow diagram is a starting sketch, not the intended finished result.
 
+## Check the environment before drawing
+
+On first use or an environment failure, follow the [setup guide](references/setup.en.md) ([中文](references/setup.md)). Inspect the OS, existing Python runtime, draw.io executable, Python dependencies and actual host capabilities before installing anything. Reuse working installations; provide platform-specific official installation steps only for missing components. Use a virtual environment for `requirements.txt`. Verify a small PNG/SVG/PDF export and an actual App edit/save on a test copy before claiming the full workflow is ready. Explain which parts need draw.io Desktop, PyMuPDF, computer-use tools, image generation or subagents; a Python package cannot supply missing host capabilities. If setup requires a user-only system action, give the exact next step and continue independent work. Record concrete checks and limitations, and reuse the verified environment on subsequent runs.
+
 ## Understand the paper, then learn from its field
 
 Read the user's manuscript or method description and establish the actual contribution, inputs, learning mechanism and outputs. If using a repository, distinguish historical variants from the configuration being illustrated. Choose the level of abstraction appropriate for an overview; do not reproduce an entire implementation just to make it look complex.

@@ -1,2 +1,3 @@
-# Build/compare need only Python's standard library; vector export and QA need this.
+# Simple scene build/semantic comparison use only the standard library.
+# Required for the export helper, PDF audit and comparison previews.
 PyMuPDF>=1.24,<2

@@ -21,6 +21,8 @@ This example was developed through multiple design and feedback interactions. Th
 
 ## Install and use
 
+Start with the [environment setup guide](references/setup.en.md): draw.io installation on macOS / Windows / Linux, a Python virtual environment, dependencies, `DRAWIO_PATH` and a minimal export check. The skill checks existing tools first and guides setup of missing components. App control, image generation and subagents require host-provided tools; installing this repository does not add those capabilities.
+
 Clone this repository into your Codex skills directory. The destination should not already exist:
 
 ```bash
@@ -54,7 +56,7 @@ Visual richness should come from scientific objects and mechanisms. A single enc
 - An agent environment supporting local skills, file access, paper retrieval and image inspection. In-app refinement also requires working computer-use tools. Interaction failures and file-based fallbacks must be disclosed rather than described as UI edits.
 - For generated assets, the environment's `imagegen` skill and generation tool. This repository does not supply models or API credentials.
 - Edit `.drawio` sources in draw.io / diagrams.net. The export helper uses draw.io Desktop; set `DRAWIO_PATH` to override its location.
-- Optional dependencies: `python3 -m pip install -r requirements.txt`. Simple scene compilation and semantic checks use the standard library; PDF processing and previews use PyMuPDF.
+- The full export helper and PDF previews require PyMuPDF; install `requirements.txt` in `.venv` as described in the setup guide. Simple scene compilation and semantic checks need no third-party Python packages.
 - SVG/PDF files may embed raster illustrations. Their extension does not imply all-vector content. Empirical plots require valid source data and reproducible processing; never fabricate results.
 
 ## Repository contents
