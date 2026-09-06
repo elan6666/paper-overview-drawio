@@ -9,7 +9,7 @@ Use these recipes when a diagram would otherwise become a wall of generic boxes.
 | Token sequence | Repeated labeled rectangles; mask tokens use a distinct fill + M label | Actual masking ratio belongs in caption only if verified |
 | Gene/prior graph | A few native circle nodes and thin no-arrow edges, grouped under an explicit schematic label | Anonymous connectivity is an illustrative glyph; specific named gene edges require evidence |
 | Encoder/decoder | Rectangle or native trapezoid-like shape, short internal label, input/output direction clear | Width changes do not assert dimensional compression unless stated |
-| Repeated blocks or representation groups | A small set of offset blocks or vector strips; coordinated fills, outlines or rear-layer opacity | Use a count label only when verified; repetition and transparency should not imply measured quantities |
+| Repeated blocks | 2–3 visible offset native rectangles with a verified ×L label | Do not imply a measured layer count from decorative repetition |
 | Frozen module | Native module box + direct 'Frozen' label or small padlock-style vector mark | Frozen status must be in contract |
 | Addition/concatenation | Circle with '+' for addition; separate 'Concat' box for concatenation | These are different operators, never interchange them for aesthetics |
 | Auxiliary objective | Short labeled connection to explicit loss node, separate from inference flow | Do not add objective terms absent from the method |
