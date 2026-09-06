@@ -8,12 +8,13 @@
 
 ## 六版示例
 
-以下是一个使用中性标题的扰动预测方法示例。三种构图分别突出**预测主线、视图学习、共享表征**；每种都有克制与鲜艳两套配色，同一构图的内容和位置完全一致。点击图片查看大图。
+以下是一个使用中性标题的扰动预测方法示例。三种构图分别突出**预测主线、视图学习、共享表征**；每种都有克制与鲜艳两套配色，同一构图的内容和位置完全一致。下方使用轻量预览，点击图片查看高清原图。
 
-| 配色 | 1 · 预测主线 | 2 · 视图学习 | 3 · 共享表征 |
-| --- | --- | --- | --- |
-| 克制 | [![预测主线：克制配色](examples/perturbation-overview/figures/design-1-restrained.png)](examples/perturbation-overview/figures/design-1-restrained.png) | [![视图学习：克制配色](examples/perturbation-overview/figures/design-2-restrained.png)](examples/perturbation-overview/figures/design-2-restrained.png) | [![共享表征：克制配色](examples/perturbation-overview/figures/design-3-restrained.png)](examples/perturbation-overview/figures/design-3-restrained.png) |
-| 鲜艳 | [![预测主线：鲜艳配色](examples/perturbation-overview/figures/design-1-vivid.png)](examples/perturbation-overview/figures/design-1-vivid.png) | [![视图学习：鲜艳配色](examples/perturbation-overview/figures/design-2-vivid.png)](examples/perturbation-overview/figures/design-2-vivid.png) | [![共享表征：鲜艳配色](examples/perturbation-overview/figures/design-3-vivid.png)](examples/perturbation-overview/figures/design-3-vivid.png) |
+| 克制配色 | 鲜艳配色 |
+| --- | --- |
+| **1 · 预测主线**<br>[![1 · 预测主线 — restrained](examples/perturbation-overview/previews/design-1-restrained.jpg)](examples/perturbation-overview/figures/design-1-restrained.png) | **1 · 预测主线**<br>[![1 · 预测主线 — vivid](examples/perturbation-overview/previews/design-1-vivid.jpg)](examples/perturbation-overview/figures/design-1-vivid.png) |
+| **2 · 视图学习**<br>[![2 · 视图学习 — restrained](examples/perturbation-overview/previews/design-2-restrained.jpg)](examples/perturbation-overview/figures/design-2-restrained.png) | **2 · 视图学习**<br>[![2 · 视图学习 — vivid](examples/perturbation-overview/previews/design-2-vivid.jpg)](examples/perturbation-overview/figures/design-2-vivid.png) |
+| **3 · 共享表征**<br>[![3 · 共享表征 — restrained](examples/perturbation-overview/previews/design-3-restrained.jpg)](examples/perturbation-overview/figures/design-3-restrained.png) | **3 · 共享表征**<br>[![3 · 共享表征 — vivid](examples/perturbation-overview/previews/design-3-vivid.jpg)](examples/perturbation-overview/figures/design-3-vivid.png) |
 
 [六版源文件与导出](examples/perturbation-overview/README.md) · [完整生成提示词与方法说明（中英文）](examples/perturbation-overview/PROMPTS.md)
 

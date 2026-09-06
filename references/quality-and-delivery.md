@@ -10,6 +10,8 @@ Look at the full figure, dense details and final publication size. Check text cl
 
 Provide six editable draw.io sources (three compositions, each with restrained and vivid color treatments), vector exports where applicable and a comparable-size 3-by-2 preview. Add a concise explanation of the three freshly researched design directions, recommend one and provide captions when useful. Retain plot scripts and enough source information to revise any real-data graphics. Disclose bitmap illustrations and imported vectors with limited editability.
 
+For README galleries, use lightweight previews linked to full-resolution exports. Keep each preview a few hundred KB or less, avoid narrow label-only table columns, and check the published page in a browser at a narrow window width. Verify image loading as well as local file validity. Preview compression does not replace the original deliverables.
+
 Use versioned directories and preserve user edits. Brief notes are usually sufficient; formal contracts, JSON manifests and hash-bound review packages are optional when reproducibility or complexity warrants them.
 
 ## Optional technical checks

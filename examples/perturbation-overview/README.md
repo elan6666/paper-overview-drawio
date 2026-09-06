@@ -51,3 +51,9 @@ PDF exports are 180 mm wide. Maintain each color pair together when changing its
 本例表达曾参考同领域论文图示：scFoundation（主框架、内部机制与任务分图）、CellFM（模型与上下文分区），以及用户提供的 scLong 与 scDFM 图例（清楚连线与更鲜明的模块配色）。这里只发布自行绘制的示例，不附参考论文图片。示例图经过多轮设计，提示词的复用范围见 PROMPTS.md。
 
 The visual study informing this example included scFoundation (framework, mechanism and task panels), CellFM (model and context organization), and user-supplied scLong and scDFM examples (clear connectors and stronger module colors). Only the authored example is distributed here; reference-paper images are not bundled. The figures went through multiple design interactions; PROMPTS.md explains the scope of prompt reuse.
+
+## README previews / 预览图
+
+主 README 使用 `previews/` 中的轻量 JPEG，点击打开 `figures/` 中的高清 PNG；原图和可编辑源文件不变。预览由已发布 PDF 渲染，使用虚拟环境中的 Python 运行 `scripts/readme_previews.py` 可重新生成。
+
+The main READMEs use lightweight JPEGs in `previews/`, linked to full-resolution PNGs in `figures/`. Original exports and editable sources are preserved. Regenerate the previews from the published PDFs by running `scripts/readme_previews.py` with the virtual environment’s Python.

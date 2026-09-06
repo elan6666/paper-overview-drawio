@@ -8,12 +8,13 @@ Study actual figures from relevant papers, then design complementary panels arou
 
 ## Six-version example
 
-This neutrally titled example illustrates a perturbation-prediction method. The three compositions emphasize **prediction, view learning and shared representations**. Each has restrained and vivid palettes with identical content and geometry. Click any image to view it at full size.
+This neutrally titled example illustrates a perturbation-prediction method. The three compositions emphasize **prediction, view learning and shared representations**. Each has restrained and vivid palettes with identical content and geometry. Lightweight previews are shown below; click an image for the full-resolution original.
 
-| Palette | 1 · Prediction first | 2 · View learning first | 3 · Shared representations first |
-| --- | --- | --- | --- |
-| Restrained | [![Prediction: restrained](examples/perturbation-overview/figures/design-1-restrained.png)](examples/perturbation-overview/figures/design-1-restrained.png) | [![View learning: restrained](examples/perturbation-overview/figures/design-2-restrained.png)](examples/perturbation-overview/figures/design-2-restrained.png) | [![Shared representations: restrained](examples/perturbation-overview/figures/design-3-restrained.png)](examples/perturbation-overview/figures/design-3-restrained.png) |
-| Vivid | [![Prediction: vivid](examples/perturbation-overview/figures/design-1-vivid.png)](examples/perturbation-overview/figures/design-1-vivid.png) | [![View learning: vivid](examples/perturbation-overview/figures/design-2-vivid.png)](examples/perturbation-overview/figures/design-2-vivid.png) | [![Shared representations: vivid](examples/perturbation-overview/figures/design-3-vivid.png)](examples/perturbation-overview/figures/design-3-vivid.png) |
+| Restrained palette | Vivid palette |
+| --- | --- |
+| **1 · Prediction first**<br>[![1 · Prediction first — restrained](examples/perturbation-overview/previews/design-1-restrained.jpg)](examples/perturbation-overview/figures/design-1-restrained.png) | **1 · Prediction first**<br>[![1 · Prediction first — vivid](examples/perturbation-overview/previews/design-1-vivid.jpg)](examples/perturbation-overview/figures/design-1-vivid.png) |
+| **2 · View learning first**<br>[![2 · View learning first — restrained](examples/perturbation-overview/previews/design-2-restrained.jpg)](examples/perturbation-overview/figures/design-2-restrained.png) | **2 · View learning first**<br>[![2 · View learning first — vivid](examples/perturbation-overview/previews/design-2-vivid.jpg)](examples/perturbation-overview/figures/design-2-vivid.png) |
+| **3 · Shared representations first**<br>[![3 · Shared representations first — restrained](examples/perturbation-overview/previews/design-3-restrained.jpg)](examples/perturbation-overview/figures/design-3-restrained.png) | **3 · Shared representations first**<br>[![3 · Shared representations first — vivid](examples/perturbation-overview/previews/design-3-vivid.jpg)](examples/perturbation-overview/figures/design-3-vivid.png) |
 
 [Sources and exports for all six figures](examples/perturbation-overview/README.md) · [Complete prompts and method brief in Chinese and English](examples/perturbation-overview/PROMPTS.md)
 
