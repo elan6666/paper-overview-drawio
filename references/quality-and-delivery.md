@@ -20,4 +20,4 @@ The PDF/SVG audit checks text, size and raster content. It is an all-vector chec
 
 ## Independent peer-figure review
 
-Provide the actual rendered drafts and same-field reference figures to an independent reviewer. Have them identify concrete explanation, style or composition gaps and recheck material repairs. Compare meaningful visual depth, not panel count or pixel density. Keep concise review notes; a static skill score or technical smoke fixture does not establish publication-level figure quality.
+Provide the actual rendered drafts and same-field reference figures to an independent reviewer. Have them identify concrete detail problems and return one consolidated list. Apply one repair pass across the figures, then verify the affected details without opening another review–revision cycle. Disclose issues that remain. Compare meaningful visual depth, not panel count or pixel density. Keep concise review notes; a static skill score or technical smoke fixture does not establish publication-level figure quality.
